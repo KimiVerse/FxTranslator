@@ -1,0 +1,17 @@
+{
+    "Liquidity": "نقدینگی", "Structural Low": "پایین‌ترین نقطه ساختاری", "Structural High": "بالاترین نقطه ساختاری",
+    "Breakout Traders": "معامله‌گران شکست", "Break and Retest": "شکست و بازگشت", "Stop Loss": "حد ضرر",
+    "SMT": "تله پول هوشمند", "Mitigation": "میتیگیشن", "Buy Side Liquidity": "نقدینگی سمت خرید",
+    "Sell Side Liquidity": "نقدینگی سمت فروش", "Structural Shift": "تغییر ساختاری", "F BOS": "فیک باس",
+    "POI": "پی او ای", "Imbalance": "ایمبالانس", "Engulfing": "اینگلف", "Pending Orders": "سفارش‌های در انتظار",
+    "Asia High": "بالاترین قیمت آسیا", "Asia Low": "پایین‌ترین قیمت آسیا", "Momentum": "شتاب", "Speed": "سرعت",
+    "Consolidation": "تثبیت", "Draw Down": "کاهش سرمایه", "Support": "حمایت", "Resistance": "مقاومت",
+    "Break Even": "سربه‌سر", "High Time Frame": "تایم‌فریم بالا", "Low Time Frame": "تایم‌فریم پایین",
+    "Trap": "تله", "Candle Closure": "بسته شدن کندل", "Change of Character": "تغییر شخصیت", "M1": "تایم فریم ۱ دقیقه",
+    "M5": "تایم فریم ۵ دقیقه", "Order Block": "بلاک سفارش", "Rejection": "رد شدن", "Wick": "فتیله",
+    "Trend": "روند", "False Break": "شکست جعلی", "Entry": "ورود (به معامله)", "Exit": "خروج (از معامله)",
+    "Scalping": "اسکالپینگ", "Trend Line": "خط روند", "Order Flow": "جریان سفارش", "Equal Highs": "قله‌های برابر",
+    "Equal Lows": "دره‌های برابر", "Counter Trend": "ضد روند", "Pullback": "پولبک", "Ranging": "رنج",
+    "Evidence": "شواهد", "Confidence": "اعتماد", "Inducement": "ایندوسمنت", "Smart Money Trap": "تله پول هوشمند",
+    "Break of Structure": "شکست ساختار"
+}

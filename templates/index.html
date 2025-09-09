@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="content-wrapper">
+    <div>
+        <h1 class="page-title">SRT File Translator</h1>
+        <p class="page-subtitle">Add API keys in the sidebar, configure your prompt in settings, and start translating.</p>
+        <section class="card bg-dark-2 mb-4">
+            <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-sliders"></i> Translation Options</h5>
+                <form id="upload-form">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="model-name" class="form-label"><i class="bi bi-robot"></i> Model Selection</label>
+                            <select class="form-select" id="model-name" name="model_name">
+                                <option value="models/gemini-1.5-flash-latest" selected>Gemini 1.5 Flash (Fast & Cost-Effective)</option>
+                                <option value="models/gemini-1.5-core-latest">Gemini 1.5 Core (New & Fast)</option>
+                                <option value="models/gemini-1.5-pro-latest">Gemini 1.5 Pro (Most Powerful)</option>
+                                <option value="models/gemini-1.0-pro">Gemini 1.0 Pro (Legacy)</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="srt-file" class="form-label"><i class="bi bi-file-earmark-text"></i> English SRT File</label>
+                            <div class="file-input-wrapper">
+                                <input type="file" class="form-control" id="srt-file" name="file" accept=".srt" required>
+                                <span id="file-name-display" class="file-input-display">No file chosen</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100"><i class="bi bi-play-circle-fill"></i> Start Translation</button>
+                </form>
+            </div>
+        </section>
+        <section id="translation-log-section" class="mb-4" style="display: none;">
+            <div class="translation-log-header">
+                <h5 class="log-title"><i class="bi bi-terminal"></i> Translation Log</h5>
+                <button id="force-stop-btn" class="btn btn-danger" style="display: none;"><i class="bi bi-stop-circle-fill me-2"></i>Force Stop</button>
+            </div>
+            <div id="status-area"></div>
+            <div id="translation-log" class="d-flex flex-column gap-3"></div>
+        </section>
+        <section id="final-result-section" class="mb-4" style="display: none;"></section>
+    </div>
+    <footer class="site-footer">
+        <p>RIP Mahdi 🖤</p>
+        <div class="social-links">
+            <a href="https://t.me/amirmasoud_rsli" target="_blank" title="Telegram"><i class="bi bi-telegram"></i></a>
+            <a href="https://github.com/KimiVerse" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://www.youtube.com/@CyberSeismic" target="_blank" title="YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+    </footer>
+</div>
+{% endblock %}

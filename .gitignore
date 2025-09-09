@@ -1,0 +1,12 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# IDE / Editor Files
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db

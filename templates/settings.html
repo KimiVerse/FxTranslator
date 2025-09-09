@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="content-wrapper">
+    <div>
+        <h1 class="page-title">Settings</h1>
+        <p class="page-subtitle">Customize the behavior of the translation model.</p>
+        <div id="status-area" class="mb-3"></div>
+        <section class="card bg-dark-2">
+            <div class="card-body">
+                <form id="settings-form">
+                    <div class="mb-3">
+                        <label for="custom-prompt" class="form-label"><i class="bi bi-chat-dots-fill"></i> Custom System Prompt</label>
+                        <p class="form-text">Edit the prompt sent to the AI. The text to be translated will be inserted where you place <code>{chunk}</code>.</p>
+                        <textarea id="custom-prompt" class="form-control" rows="15"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary"><i class="bi bi-save-fill"></i> Save Settings</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <footer class="site-footer">
+        <p>RIP Mahdi 🖤</p>
+        <div class="social-links">
+            <a href="https://t.me/amirmasoud_rsli" target="_blank" title="Telegram"><i class="bi bi-telegram"></i></a>
+            <a href="https://github.com/KimiVerse" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://www.youtube.com/@CyberSeismic" target="_blank" title="YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+    </footer>
+</div>
+{% endblock %}
